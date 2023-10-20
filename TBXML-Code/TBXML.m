@@ -231,7 +231,7 @@
         // decode xml data
         [self decodeBytes];
         
-        if (!self.rootXMLElement) {
+        if (!self.rootXMLElement && error) {
             localError = [TBXML errorWithCode:D_TBXML_DECODE_FAILURE];
         }
     }
